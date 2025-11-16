@@ -14,4 +14,5 @@ namespace KPZLAB5
         public override void BuildWindows() => house.Windows = "Дерев’яні рами";
         public override void BuildDoors() => house.Doors = "Дерев’яні двері";
     }
+
 }

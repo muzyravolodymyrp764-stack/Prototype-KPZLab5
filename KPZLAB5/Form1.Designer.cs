@@ -32,7 +32,9 @@
             this.btnBrick = new System.Windows.Forms.Button();
             this.btnModern = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnClone = new System.Windows.Forms.Button();
+            this.propertyGridOriginal = new System.Windows.Forms.PropertyGrid();
+            this.flowLayoutPanelClones = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,28 +70,47 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(217, 151);
+            this.pictureBox1.Location = new System.Drawing.Point(135, 151);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(208, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // btnClone
             // 
-            this.textBox1.Location = new System.Drawing.Point(501, 95);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(177, 103);
-            this.textBox1.TabIndex = 4;
+            this.btnClone.Location = new System.Drawing.Point(802, 352);
+            this.btnClone.Name = "btnClone";
+            this.btnClone.Size = new System.Drawing.Size(121, 23);
+            this.btnClone.TabIndex = 5;
+            this.btnClone.Text = "Клонувати";
+            this.btnClone.UseVisualStyleBackColor = true;
+            this.btnClone.Click += new System.EventHandler(this.btnClone_Click);
+            // 
+            // propertyGridOriginal
+            // 
+            this.propertyGridOriginal.HelpVisible = false;
+            this.propertyGridOriginal.Location = new System.Drawing.Point(402, 151);
+            this.propertyGridOriginal.Name = "propertyGridOriginal";
+            this.propertyGridOriginal.Size = new System.Drawing.Size(318, 170);
+            this.propertyGridOriginal.TabIndex = 6;
+            // 
+            // flowLayoutPanelClones
+            // 
+            this.flowLayoutPanelClones.AutoScroll = true;
+            this.flowLayoutPanelClones.Location = new System.Drawing.Point(241, 385);
+            this.flowLayoutPanelClones.Name = "flowLayoutPanelClones";
+            this.flowLayoutPanelClones.Size = new System.Drawing.Size(1120, 280);
+            this.flowLayoutPanelClones.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1458, 677);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.flowLayoutPanelClones);
+            this.Controls.Add(this.propertyGridOriginal);
+            this.Controls.Add(this.btnClone);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnModern);
             this.Controls.Add(this.btnBrick);
@@ -98,7 +119,6 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -108,7 +128,9 @@
         private System.Windows.Forms.Button btnBrick;
         private System.Windows.Forms.Button btnModern;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnClone;
+        private System.Windows.Forms.PropertyGrid propertyGridOriginal;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelClones;
     }
 }
 
